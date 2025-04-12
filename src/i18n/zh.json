@@ -1,0 +1,40 @@
+{
+    "room": {
+        "room":"房间",
+        "roomName":"房间名",
+        "membersNum":"人数",
+        "capacity":"容量",
+        "needPasswd":"需要密码",
+        "isAdmin":"是否房主",
+        "passwd": "密码"
+    },
+    "setting":{
+        "setting": "设置",
+        "cdm": "选择降噪方法",
+        "cssp": "选择屏幕共享设置",
+        "passwd": "设置密码",
+        "capacity": "设置房间容量"
+    },
+    "api":{
+        "NameIsUsed": "昵称重复",
+        "PasswordError": "密码错误",
+        "RoomFull": "房间已满"
+    },
+    "needCloud": "此功能需要搭配官方的云服务，不支持自建服务器",
+    "Share":"分享",
+    "mic":"麦克风",
+    "camera": "摄像头",
+    "screenShare": "屏幕共享",
+    "stopShare": "停止共享",
+    "shareVideo": "视频共享",
+    "chat": "聊天",
+    "leave": "离开",
+    "username": "用户名",
+    "Go":"前往",
+    "done":"完成",
+    "home": "首页",
+    "history": "历史记录",
+    "copySuccess": "复制分享链接成功",
+    "selectBackend": "选择livekit后端",
+    "noBackend": "没有可用的livekit后端"
+}

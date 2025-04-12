@@ -1,0 +1,40 @@
+{
+    "room": {
+        "room":"Room",
+        "roomName":"Room Name",
+        "membersNum":"Members Number",
+        "capacity":"Capacity",
+        "needPasswd":"Need Passwd",
+        "isAdmin":"IsAdmin",
+        "passwd": "Password"
+    },
+    "setting":{
+        "setting": "Setting",
+        "cdm": "Choice Denoise Method",
+        "cssp": "Choice Screen Share Preset",
+        "passwd": "Setting Password",
+        "capacity": "Setting Capacity"
+    },
+    "api":{
+        "NameIsUsed": "Room name is used",
+        "PasswordError": "Password Error",
+        "RoomFull": "Room is full"
+    },
+    "needCloud": "need use office cloud service",
+    "Share":"Share",
+    "mic":"Micphone",
+    "camera": "Camera",
+    "screenShare": "Screen Share",
+    "stopShare": "Stop Share",
+    "shareVideo": "Video Share",
+    "chat": "Chat",
+    "leave": "leave",
+    "username": "Username",
+    "Go":"Go",
+    "done":"Done",
+    "home": "Home",
+    "history": "History",
+    "copySuccess": "Copy Share Link Success",
+    "selectBackend": "Select Livekit Backend",
+    "noBackend": "No Available Livekit Backend Fund"
+}

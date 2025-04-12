@@ -1,0 +1,63 @@
+{
+  "name": "anonymous-chat",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev-ssl": "node server.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@easydarwin/easyplayer": "^5.0.7",
+    "@emoji-mart/data": "^1.1.2",
+    "@emoji-mart/react": "^1.1.1",
+    "@livekit/components-core": "^0.12.4",
+    "@livekit/components-react": "^2.8.1",
+    "@livekit/components-styles": "^1.1.4",
+    "@livekit/krisp-noise-filter": "0.2.16",
+    "@sapphi-red/web-noise-suppressor": "^0.3.3",
+    "@tailwindcss/postcss": "^4.1.2",
+    "@types/crypto-js": "^4.1.1",
+    "animate.css": "^4.1.1",
+    "audio-recorder-polyfill": "^0.4.1",
+    "clsx": "^2.1.1",
+    "crypto-js": "^4.1.1",
+    "daisyui": "5.0.12",
+    "detectrtc": "^1.4.1",
+    "emoji-mart": "^5.5.2",
+    "formidable": "^3.5.2",
+    "i18next": "^23.2.3",
+    "livekit-client": "2.9.9",
+    "livekit-server-sdk": "2.11.0",
+    "lru-cache": "^9.0.1",
+    "next": "15.2.4",
+    "next-seo": "6.6.0",
+    "react": "18.3.1",
+    "react-alert-confirm": "^4.1.8",
+    "react-dom": "18.3.1",
+    "react-dplayer": "^0.4.2",
+    "react-i18next": "15.4.1",
+    "react-typist-component": "^1.0.5",
+    "recordrtc": "^5.6.2",
+    "rxjs": "^7.8.2",
+    "set-interval-async": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/draft-js": "^0.11.18",
+    "@types/formidable": "^3.4.5",
+    "@types/node": "22.10.7",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.37.0",
+    "eslint-config-next": "15.2.4",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.2",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

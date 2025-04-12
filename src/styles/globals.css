@@ -1,0 +1,166 @@
+
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: lemonade --default, lemonade --prefersdark, lemonade;;
+  }
+@import 'animate.css';
+#__next,
+main {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+.lk-disconnect-button{
+    background-color: var(--lk-danger);
+}
+.lk-toast{
+    z-index: 50;
+    background-color: var(--lk-bg2);
+}
+.lk-connection-quality[data-lk-quality=excellent]{
+    color:var(--lk-connection-excellent);
+}
+.lk-connection-quality[data-lk-quality=good]{
+    color:var(--lk-connection-good);
+}
+.lk-connection-quality[data-lk-quality=poor]{
+    color:var(--lk-connection-poor);
+}
+
+.rotate180{
+    /* 变换原点调整为底部中心点 */
+    transform-origin: center center;
+    /* 旋转角度 */
+    transform: rotate(180deg);
+    /* 动画名称 */
+    animation-name: rotateAnimation;
+    /* 动画执行时间 */
+    animation-duration: 1s;
+    /* 动画执行方式 */
+    animation-timing-function: ease;
+    /* 动画完成后状态 */
+    animation-fill-mode: forwards;
+  }
+  
+  /* 定义旋转动画 */
+  /* @keyframes关键字表示定义动画的一系列关键帧 */
+  @keyframes rotateAnimation{
+    /* 0% 表示进入动画前的状态 */
+    0%{
+      transform: rotate(0deg);
+    }
+    /* 100% 表示完成动画后的状态 */
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+
+
+/* 分页 */
+[data-lk-user-interaction=true].lk-pagination-control {
+    opacity: 1;
+}
+
+.lk-pagination-control {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: stretch;
+    background-color: var(--lk-control-bg);
+    border-radius: var(--lk-border-radius);
+    transition: opacity ease-in-out .15s;
+    opacity: 0;
+}
+
+.lk-pagination-control>.lk-button:first-child>svg {
+    transform: rotate(180deg);
+}
+
+.lk-pagination-count {
+    padding: .5rem .875rem;
+    border-inline: 1px solid var(--lk-bg);
+}
+.lk-device-menu {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    box-shadow: none;
+}
+.lk-button[aria-pressed=true] {
+    background-color: rgba(0, 0, 0, 0);
+}
+.lk-button:not(:disabled):hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.lk-participant-tile:hover .volume-muter {
+    opacity: 1;
+    transition-delay: 0;
+}
+
+/* Excerpt of the color palette  */
+[data-lk-theme=default]  {
+    --lk-fg: #fff;
+    --lk-fg-secondary: #333;
+    --lk-fg-tertiary: #555;
+    --lk-bg5: #effdde;
+    --lk-bg: #e9e7e7;
+    --lk-bg2: #bdd6a7;
+    --lk-control-hover-bg: rgba(0, 0, 0, 0.3);
+    --lk-control-active-hover-bg: rgba(0, 0, 0, 0);
+    --lk-bg-secondary: #f5f5f5;
+    --lk-bg-tertiary: #fafafa;
+  
+    --lk-accent-fg: #fff;
+    --lk-accent-bg: #1f8cf9;
+  
+    --lk-danger-fg: #fff;
+    --lk-danger: #f91f31;
+    --lk-danger-text: #6d0311;
+    --lk-danger-bg: #fecdd4;
+  
+    --lk-success-fg: #fff;
+    --lk-success: #1ff968;
+    --lk-success-text: #036d26;
+    --lk-success-bg: #cdfedd;
+  
+    --lk-control-fg: var(--fg);
+    --lk-control-bg: var(--bg-secondary);
+  
+    --lk-connection-excellent: #06db4d;
+    --lk-connection-good: #f9b11f;
+    --lk-connection-poor: #f91f31;
+}
+
+.lk-audio-visualizer>rect {
+    fill: var(--lk-bg2);
+    transition: transform 100ms cubic-bezier(0.19, 0.02, 0.09, 1);
+}
+.lk-audio-visualizer>g>rect {
+    fill: var(--lk-fg);
+    transition: height .1s ease-out,y .1s ease-out;
+    rx: .25rem;
+}
+[data-lk-message-origin="local"] .lk-message-body{
+    color: black;
+}
+.lk-chat-entry{
+    .lk-timestamp{
+        color: #a0acb6;
+        font-size: 12px;
+    }
+    .lk-participant-name{
+        color: #d67722;
+    }
+    margin-top: 5px;
+    /* 第一个margin-top为0 */
+    &:first-child{
+        margin-top: 0; 
+    }
+}
+
+.lk-chat-entry * {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
