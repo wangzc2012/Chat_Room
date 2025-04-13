@@ -34,11 +34,11 @@ class HomeComponent extends React.Component<WithTranslation> {
         <div className='Home flex flex-col justify-center space-y-4 items-center text-center mx-auto h-full w-full'>
             <div className='flex flex-col text-center justify-center'>
                 {
-                    i18n.language=='en' ?
+                    i18n.language=='zh' ?
                     (
                         <div>
                             <div className='text-xl md:text-5xl mb-2 hidden sm:block'>
-                                A<Typist startDelay={1000}  typingDelay={110} loop={true}  cursor={<span className='cursor'>{this.state.cursor}</span>}   >nonymous Chat Room <Typist.Delay ms={1500} /><Typist.Backspace count={18} /></Typist>
+                                Q<Typist startDelay={1000}  typingDelay={110} loop={true}  cursor={<span className='cursor'>{this.state.cursor}</span>}   >ST Chat Room <Typist.Delay ms={1500} /><Typist.Backspace count={18} /></Typist>
 
                             </div>
                             <div className='text-xl md:text-5xl mb-2 block sm:hidden'>
