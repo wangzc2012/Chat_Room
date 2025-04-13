@@ -34,7 +34,7 @@ class HomeComponent extends React.Component<WithTranslation> {
         <div className='Home flex flex-col justify-center space-y-4 items-center text-center mx-auto h-full w-full'>
             <div className='flex flex-col text-center justify-center'>
                 {
-                    i18n.language=='zh' ?
+                    i18n.language=='en' ?
                     (
                         <div>
                             <div className='text-xl md:text-5xl mb-2 hidden sm:block'>
@@ -47,7 +47,7 @@ class HomeComponent extends React.Component<WithTranslation> {
                         </div>
                     ) : (
                         <div className='text-xl md:text-5xl mb-2 block'>
-                            欢迎来到 QST 聊天室!
+                            Welcome to QST Chat Room
                         </div>
                     )
                 }
