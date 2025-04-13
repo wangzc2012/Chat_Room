@@ -57,7 +57,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Anonymous Chat Room</title>
+        <title>QST Chat Room</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
