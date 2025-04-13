@@ -47,7 +47,7 @@ class HomeComponent extends React.Component<WithTranslation> {
                         </div>
                     ) : (
                         <div className='text-xl md:text-5xl mb-2 block'>
-                            欢迎来到 QST 聊天室
+                            欢迎来到 QST 聊天室!
                         </div>
                     )
                 }
