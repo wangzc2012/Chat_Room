@@ -65,6 +65,9 @@ importers:
       i18next:
         specifier: ^23.2.3
         version: 23.16.8
+      katex:
+        specifier: ^0.16.22
+        version: 0.16.22
       livekit-client:
         specifier: 2.9.9
         version: 2.9.9
@@ -74,6 +77,9 @@ importers:
       lru-cache:
         specifier: ^9.0.1
         version: 9.1.2
+      marked:
+        specifier: ^15.0.8
+        version: 15.0.8
       next:
         specifier: 15.2.4
         version: 15.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -863,6 +869,10 @@ packages:
     resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
     engines: {node: '>= 0.8'}
 
+  commander@8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
+    engines: {node: '>= 12'}
+
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
@@ -1465,6 +1475,10 @@ packages:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
     engines: {node: '>=4.0'}
 
+  katex@0.16.22:
+    resolution: {integrity: sha512-XCHRdUw4lf3SKBaJe4EvgqIuWwkPSo9XoeO8GjQW94Bp7TWv9hNhzZjZ+OH9yf1UmLygb7DIT5GSFQiyt16zYg==}
+    hasBin: true
+
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
@@ -1579,6 +1593,11 @@ packages:
   map-obj@5.0.0:
     resolution: {integrity: sha512-2L3MIgJynYrZ3TYMriLDLWocz15okFakV6J12HXvMXDHui2x/zgChzg1u9mFFGbbGWE+GsLpQByt4POb9Or+uA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
+  marked@15.0.8:
+    resolution: {integrity: sha512-rli4l2LyZqpQuRve5C0rkn6pj3hT8EWPC+zkAxFTAJLxRbENfTAhEQq9itrmf1Y81QtAX5D/MYlGlIomNgj9lA==}
+    engines: {node: '>= 18'}
+    hasBin: true
 
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
@@ -2837,6 +2856,8 @@ snapshots:
     dependencies:
       delayed-stream: 1.0.0
 
+  commander@8.3.0: {}
+
   concat-map@0.0.1: {}
 
   cross-spawn@7.0.6:
@@ -3602,6 +3623,10 @@ snapshots:
       object.assign: 4.1.7
       object.values: 1.2.1
 
+  katex@0.16.22:
+    dependencies:
+      commander: 8.3.0
+
   keyv@4.5.4:
     dependencies:
       json-buffer: 3.0.1
@@ -3700,6 +3725,8 @@ snapshots:
   lru-cache@9.1.2: {}
 
   map-obj@5.0.0: {}
+
+  marked@15.0.8: {}
 
   math-intrinsics@1.1.0: {}
 
